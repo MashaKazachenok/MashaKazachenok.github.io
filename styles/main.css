@@ -271,6 +271,22 @@ SKILLS
   color: #a9a9a9;
   float: left;
 }
+
+.skill-group {
+  margin-bottom: 5px;
+  font-size: 1.6em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.skill-sub-group {
+  margin-bottom: 5px;
+  font-size: 1.4em;
+  font-style: italic;
+  color: #008000;
+  font-weight: bold;
+}
+
 .legend:before{
   width: 3px;
   height: 10px;
