@@ -329,6 +329,12 @@ LANGUAGES
 #language-skills .skill .icons-red{
   background: url(../images/star-red.png) no-repeat;
 }
+
+#hightlight p img {
+  margin: 0 15px 0 0;
+  width: 7px;
+  height: 8px;
+}
 /*******************************************
 HOBBIES
 *******************************************/
@@ -347,21 +353,21 @@ MEDIA
 *******************************************/
 @media (min-width: 500px) {
   #education .description{
-    width: 85%;
+    width: 80%;
   }
 }
 @media (min-width: 768px) {
   #education .description{
-    width: 85%;
+    width: 80%;
   }
 }
 @media (min-width: 992px) {
   #education .description{
-    width: 87%;
+    width: 82%;
   }
 }
 @media (min-width: 1200px) {
   #education .description{
-    width: 90%;
+    width: 85%;
   }
 }
