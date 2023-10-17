@@ -1,268 +1,138 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Maria Kazachenok</title>
-    <link href="styles/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/font-awesome.css" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="images/favicon.jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="resume,cv,Maria Kazachenok" />
+    <meta name="description" content="Maria Kazachenok's CV">
+    <meta name="author" content="Maria Kazachenok" />
+    <title>Maria Kazachenok — Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
 </head>
-<body data-feedly-mini="yes">
+
+<body>
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div id="photo-header" class="text-center">
-                    <div id="photo">
-                        <img src="images/avatar.jpg" alt="avatar">
-                    </div>
-                    <div id="text-header">
-                        <h1>Hi,<br> my name is <span>Maria Kazachenok</span> and this is my resume!</h1>
+        <section class="main-info-section">
+            <div class="info-logo">
+                <img src="assets/images/avatar.jpg" alt="avatar" class="logo">
+            </div>
+
+            <div>
+                <div class="header">
+                    <div class="header-title" id="profileName">Your Name</div>
+                    <div class="header-sub-title" id="profileSubTitle">
+                        Software Engineer
                     </div>
                 </div>
+                <ul id="linksList" class="links-container"></ul>
+            </div>
+
+        </section>
+
+        <section class="info-row">
+            <div class="cat-header">
+                <span class="cat-indicator">
+                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                </span>
+                <span class="cat-title">Overview</span>
+            </div>
+            <div class="cat-list-body">
+                <ul id="overview"></ul>
+            </div>
+
+        </section>
+
+        <div class="experience-container">
+            <div class="left-col">
+                <!-- Work experience section -->
+                <section class="info-row">
+                    <div class="cat-header">
+                        <span class="cat-indicator">
+                            <i class="fas fa-briefcase" aria-hidden="true"></i>
+                        </span>
+                        <span class="cat-title">Work Experience</span>
+                    </div>
+                    <div class="cat-list-body">
+                        <ul id="projectList"></ul>
+                    </div>
+                </section>
+
+                <!-- Certifications listing section -->
+                <section class="info-row">
+                    <div class="cat-header">
+                        <span class="cat-indicator">
+                            <i class="fas fa-certificate" aria-hidden="true"></i>
+                        </span>
+                        <span class="cat-title">Certifications</span>
+                    </div>
+                    <div class="cat-list-body">
+                        <ul id="certList"></ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="right-col">
+                <section class="info-row">
+                    <div class="cat-header">
+                        <span class="cat-indicator">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                        </span>
+                        <span class="cat-title">Skills</span>
+                    </div>
+                    <div class="cat-list-body">
+                        <ul id="skillList"></ul>
+                    </div>
+                </section>
+
+                <!-- Education section -->
+                <section class="info-row">
+                    <div class="cat-header">
+                        <span class="cat-indicator">
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                        </span>
+                        <span class="cat-title">Education</span>
+                    </div>
+                    <div class="cat-list-body">
+                        <div id="educationList"></div>
+                    </div>
+                </section>
+
+                <!-- Languages section-->
+                <section class="info-row">
+                    <div class="cat-header">
+                        <span class="cat-indicator">
+                            <i class="fas fa-language" aria-hidden="true"></i>
+                        </span>
+                        <span class="cat-title">Languages</span>
+                    </div>
+                    <div class="cat-list-body">
+                        <ul id="languages"></ul>
+                    </div>
+                </section>
+
+                <!-- Hobbies section-->
+                <section class="info-row">
+                    <div class="cat-header">
+                        <span class="cat-indicator">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </span>
+                        <span class="cat-title">INTERESTS</span>
+                    </div>
+                    <div class="cat-list-body">
+                        <ul id="hobbies"></ul>
+                    </div>
+                </section>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-7">
-                <!-- ABOUT ME -->
-                <div class="box clearfix">
-                    <h2>About me</h2>
-                    <p>Senior software engineer experienced in developing web and mobile solutions within 6 years.</p>
-                </div>
-                 <!-- CAREER HIGHLIGHTS -->
-                <div class="box" id="hightlight">
-                    <h2>Career highlights</h2>
-                    <p><img src="images/triangle.png">Experienced in developing web and mobile solutions within 6.5 years.</p>
-                    <p><img src="images/triangle.png">Strong knowledge in .Net and Angular.</p>
-                    <p><img src="images/triangle.png">Experienced in design/architecture issues.</p>
-                    <p><img src="images/triangle.png">Good understanding of all stages of software development process.</p>
-                    <p><img src="images/triangle.png">Good communication skills, self-motivated, responsible, team player.</p>
-                </div>
-                <!-- EXPERIENCES -->
-                <div class="box">
-                    <h2>EXPERIENCE</h2>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where">Intetics, Inc.</div>
-                            <div class="year">July 2020 - Until now</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession">Senior full stack developer</div>
-                            <div class="description">
-                               <div><span class="title">Project Name: </span>Modlin</div>
-                               <div><span class="title">Project Description: </span>Learning Management System for individual users, school and organization students where it's possible to buy a course, take practice and compulsory tests, track the score of the learning process, take theoretical and practical exams.</div>
-                               <div><span class="title">Responsibilities: </span>Developing front-end and back-end functionality and business logic. Architecture tasks. Working with DB. Export jobs implementation. Import tools developing. Code reviewing.</div>
-                               <div><span class="title">Technologies and Tools: </span>Technologies and Tools: .NET Framework; .NET Core; ASP.NET MVC; ASP.NET Core Web API; IdentityServer4; NHibernate; Quartz; Log4net; FluentMigrator; Autofac; AutoMapper; MS SQL; Angular 10; Typescript; JQuery; Capacitor; Swagger; Azure Blob Storage; Azure DevOps Services; PaygateApi; Ionic; Capacitor</div>
-                               <div><span class="title">Project Size: </span>8 people.</div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where">Intetics, Inc.</div>
-                            <div class="year">November 2019 - June 2020</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession">Full stack developer</div>
-                            <div class="description">
-                               <div><span class="title">Project Name: </span>Patient app</div>
-                               <div><span class="title">Project Description: </span>The mobile application allows to schedule an appointment, confirm, cancel, reschedule and pay for it, see notifications about all the future visits and balance.</div>
-                               <div><span class="title">Responsibilities: </span>Development front-end and back-end functionality. Architecture tasks. Work with DB. Deployment and authorization issues. Daily jobs implementation. Code reviewing.</div>
-                               <div><span class="title">Technologies and Tools: </span>Net Core Web API, MS SQL, MongoDB, Dapper, Angular, Ionic, Capacitor, nginx, Swagger, Firebase, Quartz, NLog, Jenkins</div>
-                               <div><span class="title">Project Size: </span>5 people.</div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where">Intetics, Inc.</div>
-                            <div class="year">August 2019 - November 2019</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession">Front-end developer</div>
-                            <div class="description">
-                               <div><span class="title">Project Name: </span>Adverta</div>
-                               <div><span class="title">Project Description: </span>The application allows you to upload and play videos on various screens and manage content for different roles.</div>
-                               <div><span class="title">Responsibilities: </span>Developing Front-ent part of the application, including responsive design, rtl support, localization, landing page.</div>
-                               <div><span class="title">Technologies and Tools: </span>VueJS, Figma, Docker, Postman.</div>
-                               <div><span class="title">Project Size: </span>5 people.</div>
-                        </div>
-                        </div>
-                    </div>
-                      <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where">Intetics, Inc.</div>
-                            <div class="year">December 2018 - April 2019</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession">Mobile developer</div>
-                            <div class="description">
-                               <div><span class="title">Project Name: </span>Nanoscent</div>
-                               <div><span class="title">Project Description: </span>Mobile system that monitors babies' health and life cycle, recognizes different statuses and parameters of babies’ diapers and provides recommendations to users based on the machine learning algorithms.</div>
-                               <div><span class="title">Responsibilities: </span>Developing, building and deployment front-end side for mobile application.</div>
-                               <div><span class="title">Technologies and Tools: </span>React Native, Javascript, Postman, MySQL.</div>
-                               <div><span class="title">Project Size: </span>4 people.</div>
-                        </div>
-                        </div>
-                    </div>
-                     <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where">Intetics, Inc.</div>
-                            <div class="year">July 2018 - November 2018</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession">Web developer</div>
-                            <div class="description">
-                               <div><span class="title">Project Name: </span>Loreal</div>
-                               <div><span class="title">Project Description: </span>Workflow management system for merchandisers.</div>
-                               <div><span class="title">Responsibilities: </span>Designing and developing functionality and business logic. Working with DB. Performance optimization. Code review.</div>
-                               <div><span class="title">Technologies and Tools: </span>C#, Web API, .Net Core, MySQL, Angular, Autofac, REST, FluentValidation, FluentMigrator, Serilog, Git.</div>
-                               <div><span class="title">Project Size: </span>5 people.</div>
-                        </div>
-                        </div>
-                    </div>
-                      <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where">Intetics, Inc.</div>
-                            <div class="year">August 2015 - June 2018</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession">Web developer</div>
-                            <div class="description">
-                               <div><span class="title">Project Name: </span>Accelify</div>
-                               <div><span class="title">Project Description: </span>The web application is a Learning Management System. The project is a large cross functional system for many special schools.</div>
-                               <div><span class="title">Responsibilities: </span>Development of new and extending existing functionality and business logic.
-                               Making report using Rdlc Viewer. Work with DB. Performance improvments. Code review.</div>
-                               <div><span class="title">Technologies and Tools: </span>C#, MVC, MSSQL, Linq, JQuery, Dapper, NHibernate, Kendo UI, 
-                               SVN, Git, Rdlc Viewer.</div>
-                               <div><span class="title">Project Size: </span>15 people.</div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where">Intetics, Inc.</div>
-                            <div class="year">May 2015 - August 2015</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession">Web developer</div>
-                            <div class="description">
-                               <div><span class="title">Project Name: </span>Wofkflow Navigator</div>
-                               <div><span class="title">Project Description: </span>A system for store managers. Allowing easy and quick selection of the necessary scales for the buyer.</div>
-                               <div><span class="title">Responsibilities: </span>Designing and developing business logic. Build project. Page making.</div>
-                               <div><span class="title">Technologies and Tools: </span>AngularJS, Bower, Lodash, Grunt.</div>
-                               <div><span class="title">Project Size: </span>4 people.</div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where">Intetics, Inc.</div>
-                            <div class="year">March 2015 - May 2015</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession">Web developer</div>
-                            <div class="description">Passed intensive programming courses. Got knowledges of C#, .NET,  ASP.NET MVC, JavaScript, CSS. 
-                            Gained work experience with NUnit, Entity Framework, IoC container, Twitter Bootstrap, Ajax.</div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="col-xs-3">
-                            <div class="where">Self-education</div>
-                            <div class="year">January 2015</div>
-                        </div>
-                        <div class="col-xs-9">
-                            <div class="profession">C# (ASP.NET MVC) and JavaScript programmer</div>
-                            <div class="description">
-                                Created web application <a target="_blank" href="https://github.com/MashaKazachenok/PharmacistWorkplace">"Pharmacist's workplace"</a>, using the framework ASP.NET MVC. Wrote a calculator, <a target="_blank" href="https://github.com/MashaKazachenok/ToDoMobile"> To do list </a>for mobile on JavaScript.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-          
-            </div>
-          <div class="col-xs-12 col-sm-5">
-                <!-- CONTACT -->
-                <div class="box clearfix">
-                    <h2>Contacts</h2>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-                        <div class="title only pull-right"><a href="mailto:kazachenokm@gmail.com">kazachenokm@gmail.com</a></div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-skype fa-fw"></span></div>
-                        <div class="title pull-right">Skype</div>
-                        <div class="description pull-right"><a href="skype:m.kazachenok">m.kazachenok</a></div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
-                        <div class="title pull-right">GitHub</div>
-                        <div class="description pull-right"><a target="_blank" href="https://github.com/MashaKazachenok">https://github.com/MashaKazachenok</a></div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
-                        <div class="title pull-right">LinkedIn</div>
-                        <div class="description pull-right"><a target="_blank" href="https://www.linkedin.com/in/masha-kazachenok-b89044b2/">https://www.linkedin.com/in/masha-kazachenok-b89044b2/</a></div>
-                    </div>
-                </div>
-                <!-- SKILLS -->
-                <div class="box">
-                    <h2>Technical Skills</h2>
-                    <div class="skills">
-                        <div class="skill-group">Languages and technologies</div>
-                        <p>C#, .NET MVC, .NET Core, Web API, Autofac, Rdlc Viewer, Unit testing, IdentityServer, Quartz, FluentMigrator, Azure,
-                        JavaScript, Angular, Typescript, React Native, JQuery, Ajax, Kendo UI, Ionic, Capacitor, HTML, SCSS, LESS, React, Redux, Twitter Bootstrap, Vue, Vuex, Vuetify, Lodash</p>                      
-                        <div class="skill-group">Databases and database access libraries</div>
-                        <p>MS SQL, My SQL, NHibernate, Entity Framework, Dapper, MongoDB</p>
-                        <div class="skill-group">Development Environments (IDE)/Tools</div>
-                        <p>Visual studio, Visual studio code, XCode, Android studio, JIRA, Git, Svn, Figma, Postman</p>              
-                    </div>
-                </div>
-
-                <!-- CERTIFICATES -->
-                <div class="box">
-                <h2>Certificates</h2>
-                <div class="job clearfix">
-                    <div class="col-xs-4">
-                        <div class="where">Microsoft</div>
-                        <div class="year">Issued April 2021</div>
-                    </div>
-                    <div class="col-xs-8">
-                        <div class="description">AZ-900 Azure Fundamentals</div>
-                    </div>
-                </div>
-            </div>
-
-                <!-- EDUCATION -->
-                <div class="box">
-                    <h2>Education</h2>
-                    <ul id="education" class="clearfix">
-                        <li>
-                            <div class="year pull-left">2015</div>
-                            <div class="description pull-right">
-                                <h3>BNTU, the faculty of information technology and robotics</h3>
-                                <p>Studied the basics of programming: Pascal, Delphi, Visual Basic</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- LANGUAGES -->
-                <div class="box">
-                    <h2>Languages</h2>
-                    <div id="language-skills">
-                        <div class="skill">Russian - Native</div>
-                        <div class="skill">English - Upper-intermediate</div>
-                        <div class="skill">French - Elementary</div>
-                    </div>
-                </div>
-                </div>
-        </div> 
     </div>
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/scripts.js"></script>
+
+    <script src="data/profile.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
