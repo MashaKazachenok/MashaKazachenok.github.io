@@ -88,7 +88,7 @@ ul.links-container {
     flex-wrap: wrap;
 }
 
-.info-logo {
+.logo-wrapper {
     border-right: 2px solid #f5f5f5;
     padding: 1rem;
     vertical-align: middle;
@@ -230,9 +230,6 @@ li.project-desc-item {
 }
 
 .cat-skill-type {
-    /* width: 100%; */
-    /* min-width: 13.5rem;
-    text-transform: uppercase;  */
     font-weight: 600;
     letter-spacing: 1px;
     padding: 5px 0;
@@ -265,7 +262,8 @@ li.project-desc-item {
     padding-bottom: 20px;
 }
 
-.ach-item {
+.ach-item,
+.language-item {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -286,7 +284,8 @@ li.project-desc-item {
     color: #444;
 }
 
-.ach-duration {
+.ach-duration,
+.language-level {
     color: #666;
     font-style: italic;
     width: 25%;
@@ -305,7 +304,7 @@ li.project-desc-item {
     padding-left: 0.3rem !important;
 }
 
-.experience-container {
+.table-container {
     display: flex;
     flex-direction: row;
 }
@@ -321,13 +320,23 @@ li.project-desc-item {
 
 /* Media wuery for mobile view */
 @media screen and (max-width: 500px) {
-    .profile-logo {
+    .table-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-wrapper {
         margin: 0 auto;
+        border-right: 0;
+    }
+
+    .logo {
+        width: 90px;
+        border-radius: 50%;
     }
 
     .header-title {
-        /* flex-wrap: wrap; */
-        /* justify-content: center; */
+        font-size: initial;
         text-align: center;
     }
 
@@ -336,7 +345,6 @@ li.project-desc-item {
     }
 
     .header-sub-title {
-        /* justify-content: center; */
         text-align: center;
     }
 
@@ -358,29 +366,7 @@ li.project-desc-item {
         padding: 0;
     }
 
-    .ach-item {
-        flex-direction: column;
-    }
-
-    .ach-item .ach-title {
-        width: auto;
-    }
-
-    .ach-item .ach-duration {
-        width: auto;
-        text-align: left;
-    }
-
-    .edu-header {
-        flex-direction: column;
-    }
-
-    .edu-score {
-        margin-left: 0;
-    }
-
     .contact-item {
-        /* width: 100%; */
         display: block;
         cursor: pointer;
     }
@@ -403,15 +389,29 @@ li.project-desc-item {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        /* justify-content: space-between; */
     }
 
     .project-link a {
         word-wrap: break-word;
     }
 
+    .edu-header,
+    .project-header,
+    .ach-item {
+        flex-direction: column;
+    }
+
+    .ach-title {
+        width: 100%;
+    }
+
     .project-desc {
         color: #444;
         padding: 4px 0;
+    }
+
+    .ach-duration {
+        width: 100%;
+        text-align: initial;
     }
 }

@@ -10,7 +10,6 @@ const setTitle = data => {
         const li = document.createElement('li');
 
         const summaryItem = document.createElement('div');
-        summaryItem.className = 'ach-item';
         summaryItem.innerHTML = item;
 
         li.appendChild(summaryItem);
@@ -210,7 +209,7 @@ const setHobbies = hobbies => {
         const li = document.createElement('li');
 
         const achItem = document.createElement('div');
-        achItem.className = 'ach-item';
+        achItem.className = 'language-item';
 
         const achTitle = document.createElement('div');
         achTitle.className = 'ach-title';
@@ -229,7 +228,7 @@ const setLanguages = languages => {
         const li = document.createElement('li');
 
         const achItem = document.createElement('div');
-        achItem.className = 'ach-item';
+        achItem.className = 'language-item';
 
         const achTitle = document.createElement('div');
         achTitle.className = 'ach-title';
@@ -237,7 +236,7 @@ const setLanguages = languages => {
         achItem.appendChild(achTitle);
 
         const achDuration = document.createElement('div');
-        achDuration.className = 'ach-duration';
+        achDuration.className = 'language-level';
         achDuration.innerHTML = evt.level;
         achItem.appendChild(achDuration);
 
