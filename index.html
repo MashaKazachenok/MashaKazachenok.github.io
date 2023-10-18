@@ -14,15 +14,16 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.jpg" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+    <script type="text/javascript" src="assets/js/html2canvas.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <section class="main-info-section">
-            <div class="logo-wrapper">
+            <div class="logo-wrapper" data-html2canvas-ignore="true">
                 <img src="assets/images/avatar.jpg" alt="avatar" class="logo">
             </div>
-
             <div>
                 <div class="header">
                     <div class="header-title" id="profileName">Your Name</div>
@@ -32,7 +33,12 @@
                 </div>
                 <ul id="linksList" class="links-container"></ul>
             </div>
-
+            <div data-html2canvas-ignore="true">
+                <span id="download" onClick="downloadPdf()" class="download-btn">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    <span class="download-label">Download PDF</span>
+                </span>
+            </div>
         </section>
 
         <section class="info-row">

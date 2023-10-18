@@ -86,10 +86,10 @@ ul.links-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .logo-wrapper {
-    border-right: 2px solid #f5f5f5;
     padding: 1rem;
     vertical-align: middle;
 }
@@ -289,7 +289,7 @@ li.project-desc-item {
     color: #666;
     font-style: italic;
     width: 25%;
-    text-align: right;
+    text-align: center;
 }
 
 .expDet {
@@ -318,6 +318,15 @@ li.project-desc-item {
     flex: 2;
 }
 
+.download-btn {
+    cursor: pointer;
+    color: #3173BB;
+}
+
+.download-label {
+    margin-left: 10px;
+}
+
 /* Media wuery for mobile view */
 @media screen and (max-width: 500px) {
     .table-container {
@@ -327,7 +336,6 @@ li.project-desc-item {
 
     .logo-wrapper {
         margin: 0 auto;
-        border-right: 0;
     }
 
     .logo {

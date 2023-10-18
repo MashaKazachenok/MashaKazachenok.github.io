@@ -245,6 +245,41 @@ const setLanguages = languages => {
     })
 }
 
+const downloadPdf = async () => {
+    await html2canvas(document.body, {
+        scrollY: -window.scrollY, scale: 1, onclone: function (document) {
+            document.querySelector('.container').style.margin = '0';
+            document.querySelector('.container').style.maxWidth = 'initial';
+            document.querySelector('.main-info-section').style.justifyContent = 'start';
+            document.querySelector('.links-container').style.padding = '0';
+            document.querySelector('.header').style.padding = '0';
+        }
+    }).then(
+        canvas => {
+            const contentDataURL = canvas.toDataURL("image/png", 1.0);
+            let pdf = new jsPDF("p", "pt", "a4"); // A4 size page of PDF
+
+            let imgWidth = 600;
+            let pageHeight = pdf.internal.pageSize.height;
+            let imgHeight = (canvas.height * imgWidth) / canvas.width;
+            let heightLeft = imgHeight;
+            let position = 0;
+
+            pdf.addImage(contentDataURL, "PNG", 0, position, imgWidth, imgHeight);
+            heightLeft -= pageHeight;
+
+            while (heightLeft >= 0) {
+                position = heightLeft - imgHeight;
+                pdf.addPage();
+                pdf.addImage(contentDataURL, "PNG", 0, position, imgWidth, imgHeight);
+                heightLeft -= pageHeight;
+            }
+
+            pdf.save(`${profileData.saveFileName}.pdf`);
+        }
+    );
+}
+
 //  Entry Function, IIFE
 (() => {
     // Call functions to load profile
