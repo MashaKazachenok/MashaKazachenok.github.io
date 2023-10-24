@@ -32,12 +32,12 @@ const profileData = {
         {
             category: "Backend",
             topics: ["C#", ".Net MVC", ".Net Core", ".Net Framework", "ASP.Net", "EF", "Nhirernate", "Dapper", "Quartz",
-                "WebAPI", "RabbitMQ", "NUnit", "Selenium Tests"]
+                "WebAPI", "RabbitMQ", "SignalR", "NUnit", "Selenium Tests"]
         },
         {
             category: "Frontend",
             topics: ["Javascript", "Typescript", "Angular", "ReactJs", "Redux", "Mobx", "VueJs", "CSS", "LESS", "jQuery",
-                "Material UI", "Ant Design", "Bootstrap", "PrimeNG", "Kendo UI"]
+                "Material UI", "Ant Design", "Bootstrap", "PrimeNG", "Kendo UI", "Froala Editor"]
         },
         {
             category: "Mobile Dev",
@@ -88,11 +88,13 @@ const profileData = {
                 'Implementing responsible screen size Web and mobile front-end UI and logic.',
                 'Working with DB. Export jobs implementation. Import tools developing.',
                 'Code reviewing, refactoring legasy functionality.',
-                'Setting CI/CD in Azure Devops.',
+                'Setting up CI/CD in Azure Devops.',
                 'Working with Microsoft Azure services: setting up databases, virtual machines, blob storage, CDN and Load Balancer.',
-                'Building mobile .ipa and .apk files using XCode and Android Studio, sending it to App store and Play market.'],
+                'Building mobile .ipa and .apk files using XCode and Android Studio, sending it to App store and Play market.',
+                'Setting up Froala Editor to generate html content.'
+            ],
             achievements: ``,
-            technologies: [".NET Framework", ".NET Core", "ASP.NET MVC", "ASP.NET Core WEB API", "Azure Blob Storage", "Azure VMs", "Azure DevOps Services", "AzCopy",
+            technologies: [".NET Framework", ".NET Core", "ASP.NET MVC", "ASP.NET Core WEB API", "Azure Blob Storage", "Azure VMs", "Azure DevOps Services", "AzCopy", "Froala Editor",
                 "Identity Server 4", "NHibernate", "Quartz", "MS SQL", "Angular 10", "TypeScript", "Material UI", "Ionic", "Capacitor", "Swagger", "PaygateAPI", "Log4net", "Test Flight"]
         },
         {
@@ -109,7 +111,7 @@ const profileData = {
             ],
             achievements: ``,
             technologies: [".NET Core WEB API", "MS SQL", "MongoDB", "Dapper", "Angular9", "Ionic", "Capacitor", "nginx", "Swagger", "Firebase",
-                "Quartz", "NLog"]
+                "Quartz", "NLog", "SignalR"]
         },
         {
             organization: "Intetics, Inc.",
