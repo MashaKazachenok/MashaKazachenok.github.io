@@ -6,7 +6,7 @@ const profileData = {
     about: {
         overview: [
             'Full stack software engineer adept in working in both front-end and back-end development processes within 8.5 years.',
-            'Highly skilled in development in programming design, development and implementation of functional specifications.',
+            'Highly skilled in development in programming design and implementation of functional specifications.',
             'Possesses a strong command of multiple programming languages and technologies, including C#, T-SQL, .NET, .NET Core, ASP.NET Core, EF Core, MS SQL, Typescript, Angular, React and Azure DevOps.',
             'Has good understanding of all stages of software development process.',
             'Has an experience with Microsoft Azure, proven by having passed the Microsoft Certified Azure Developer Associate certification.',
