@@ -111,7 +111,7 @@ const profileData = {
             ],
             achievements: ``,
             technologies: [".NET Core WEB API", "MS SQL", "MongoDB", "Dapper", "Angular9", "Ionic", "Capacitor", "nginx", "Swagger", "Firebase",
-                "Quartz", "NLog", "SignalR"]
+                "Quartz", "NLog", "SignalR", "Grafana"]
         },
         {
             organization: "Intetics, Inc.",
