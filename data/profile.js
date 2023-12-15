@@ -7,7 +7,7 @@ const profileData = {
         overview: [
             'Full stack software engineer adept in working in both front-end and back-end development processes within 8.5 years.',
             'Highly skilled in development in programming design and implementation of functional specifications.',
-            'Possesses a strong command of multiple programming languages and technologies, including C#, T-SQL, .NET, .NET Core, ASP.NET Core, EF Core, MS SQL, Typescript, Angular, React and Azure DevOps.',
+            'Possesses a strong command of multiple programming languages and technologies, including C#, T-SQL, .NET, ASP.NET, MS SQL, JavaScript, Angular, React.',
             'Has good understanding of all stages of software development process.',
             'Has an experience with Microsoft Azure, proven by having passed the Microsoft Certified Azure Developer Associate certification.',
             'Excellent soft skills, team player.'
@@ -36,7 +36,7 @@ const profileData = {
         },
         {
             category: "Frontend",
-            topics: ["Javascript", "Typescript", "Angular", "ReactJs", "Redux", "Mobx", "VueJs", "CSS", "LESS", "jQuery",
+            topics: ["JavaScript", "TypeScript", "Angular", "ReactJs", "Redux", "Mobx", "VueJs", "CSS", "LESS", "jQuery",
                 "Material UI", "Ant Design", "Bootstrap", "PrimeNG", "Kendo UI", "Froala Editor"]
         },
         {
@@ -76,7 +76,8 @@ const profileData = {
                 'Code review, performance optimization, mentoring.'
             ],
             achievements: ``,
-            technologies: [".NET", ".NET Core", ".NET Core WEB API", "EF Core", "C#", "T-SQL", "MS SQL", "RabitMQ", "Hangfire", "ReactJS", "Redux", "MobX", "Ant Design", "Bootstrap", "Git", "SVN", "Log4net"]
+            technologies: [".NET", ".NET Core", ".NET Core WEB API", "EF Core", "C#", "T-SQL", "MS SQL", "RabitMQ", "Hangfire", "ReactJS", "Redux", "TypeScript", "MobX", "Ant Design", "Bootstrap",
+             "Git", "SVN", "Log4net", "Monaco Editor"]
         },
         {
             organization: "Intetics, Inc.",
@@ -87,7 +88,7 @@ const profileData = {
                 'Implementing back-end functionality and business logic.',
                 'Implementing responsible screen size Web and mobile front-end UI and logic.',
                 'Working with DB. Export jobs implementation. Import tools developing.',
-                'Code reviewing, refactoring legasy functionality.',
+                'Code reviewing, refactoring legacy functionality.',
                 'Setting up CI/CD in Azure Devops.',
                 'Working with Microsoft Azure services: setting up databases, virtual machines, blob storage, CDN and Load Balancer.',
                 'Building mobile .ipa and .apk files using XCode and Android Studio, sending it to App store and Play market.',
@@ -138,7 +139,7 @@ const profileData = {
                 'Postman testing.'
             ],
             achievements: ``,
-            technologies: ["React Native", "Javascript", "Postman", "MySQL"]
+            technologies: ["React Native", "JavaScript", "Postman", "MySQL"]
         },
         {
             organization: "Intetics, Inc.",
@@ -154,17 +155,17 @@ const profileData = {
         },
         {
             organization: "Intetics, Inc.",
-            title: "Full stack .NET Developer",
+            title: ".NET Developer",
             duration: "August 2015 - June 2018",
-            domain: `E-Learning, 3-15 team members`,
+            domain: `E-Learning, 15 members`,
             responsabilities: [
-                'Development of new and extending existing functionality and business logic.',
+                'Development new and extending existing functionality and business logic.',
                 'Making report using Rdlc Viewer.',
-                'Work with DB. Performance improvements. Code review.',
+                'Working with DB. Performance improvements. Code review.',
                 'Writing Unit and Selenium tests.'],
             achievements: ``,
-            technologies: [".NET", "C#", "ASP.NET MVC", "SQL Server", "NHibernate", "NUnit", "Bootstrap", "TeamCity",
-                "Jazascript", "JQuery", "KendoUI", "Dapper", "CSS", "SVN"]
+            technologies: [".NET Framework", "C#", "ASP.NET MVC", "MS SQL", "NHibernate", "NUnit", "Bootstrap", "TeamCity",
+                "JavaScript", "JQuery", "KendoUI", "Dapper", "CSS","LESS", "SVN", "Rdlc Viewer"]
         }
     ],
     certifications: [
