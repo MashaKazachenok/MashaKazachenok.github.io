@@ -77,7 +77,7 @@ const profileData = {
             ],
             achievements: ``,
             technologies: [".NET", ".NET Core", ".NET Core WEB API", "EF Core", "C#", "T-SQL", "MS SQL", "RabitMQ", "Hangfire", "ReactJS", "Redux", "TypeScript", "MobX", "Ant Design", "Bootstrap",
-             "Git", "SVN", "Log4net", "Monaco Editor"]
+             "Git", "SVN", "Log4net", "Monaco Editor", "XSLT"]
         },
         {
             organization: "Intetics, Inc.",
