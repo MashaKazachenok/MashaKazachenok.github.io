@@ -66,7 +66,7 @@ const profileData = {
             organization: "Finstek",
             title: "Full stack .NET | React Developer",
             duration: "January 2024 - Until now",
-            domain: "Fintex, 17 members",
+            domain: "Fintech, 17 members",
             responsabilities: [
                 'Implementing functionality and business logic.',
                 'Implementing scheduled jobs and financial reports.',
