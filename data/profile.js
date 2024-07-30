@@ -5,9 +5,9 @@ const profileData = {
     sub_title: "Senior Full Stack Software Engineer",
     about: {
         overview: [
-            'Full stack software engineer adept in working in both front-end and back-end development processes within 8.5 years.',
+            'Full stack software engineer adept in working in both front-end and back-end development processes within 9 years.',
             'Highly skilled in development in programming design and implementation of functional specifications.',
-            'Possesses a strong command of multiple programming languages and technologies, including C#, T-SQL, .NET, ASP.NET, MS SQL, JavaScript, Angular, React.',
+            'Possesses a strong command of multiple programming languages and technologies, including C#, T-SQL, .NET, ASP.NET, MS SQL, MySQL, JavaScript, Angular, React.',
             'Has good understanding of all stages of software development process.',
             'Has an experience with Microsoft Azure, proven by having passed the Microsoft Certified Azure Developer Associate certification.',
             'Excellent soft skills, team player.'
@@ -58,10 +58,26 @@ const profileData = {
         },
         {
             category: "Microsoft Azure",
-            topics: ["Azure SQL", "Azure Blob Storage", "Azure VMs", "Azure Load Balancer", "CDN", "Azure App Services"]
+            topics: ["Azure SQL", "Azure Blob Storage", "Azure VMs", "Azure Load Balancer", "CDN", "Azure App Services", "Azure Application Insights"]
         }
     ],
     projects: [
+        {
+            organization: "Finstek",
+            title: "Full stack .NET | React Developer",
+            duration: "January 2024 - Until now",
+            domain: "Fintex, 17 members",
+            responsabilities: [
+                'Implementing functionality and business logic.',
+                'Implementing scheduled jobs and financial reports.',
+                'Integration and communication with payment systems.',
+                'Refactoring to Dapper, performance improvements.',
+                'Code review.'
+            ],
+            achievements: ``,
+            technologies: [".NET", ".NET WEB API", "Dapper", "EF", "C#", "T-SQL", "My SQL", "Hangfire", "ReactJS", "Redux", "TypeScript", "MobX", "Ant Design",
+             "Azure pipelines", "Azure Application Insights", "Azure Blob Storage", "Swagger", "Postman"]
+        },
         {
             organization: "Intetics, Inc.",
             title: "Full stack .NET | React Developer",
